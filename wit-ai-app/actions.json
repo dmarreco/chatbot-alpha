@@ -1,0 +1,211 @@
+{
+  "data" : [
+    {
+      "id" : "function-getCurrentOrder",
+      "type" : "function",
+      "name" : "getCurrentOrder"
+    },
+    {
+      "id" : "function-getOrder",
+      "type" : "function",
+      "name" : "getOrder"
+    },
+    {
+      "id" : "function-getPaymentOptions",
+      "type" : "function",
+      "name" : "getPaymentOptions"
+    },
+    {
+      "id" : "function-getProduct",
+      "type" : "function",
+      "name" : "getProduct"
+    },
+    {
+      "id" : "function-getQuotation",
+      "type" : "function",
+      "name" : "getQuotation"
+    },
+    {
+      "id" : "function-getQuote",
+      "type" : "function",
+      "name" : "getQuote"
+    },
+    {
+      "id" : "function-quote",
+      "type" : "function",
+      "name" : "quote"
+    },
+    {
+      "id" : "function-selectCaterer",
+      "type" : "function",
+      "name" : "selectCaterer"
+    },
+    {
+      "id" : "function-selectPaymentForm",
+      "type" : "function",
+      "name" : "selectPaymentForm"
+    },
+    {
+      "id" : "function-selectPaymentOForm",
+      "type" : "function",
+      "name" : "selectPaymentOForm"
+    },
+    {
+      "id" : "function-selectPaymentOption",
+      "type" : "function",
+      "name" : "selectPaymentOption"
+    },
+    {
+      "id" : "template- Indique como deseja pagar:",
+      "type" : "template",
+      "template" : " Indique como deseja pagar:"
+    },
+    {
+      "id" : "template- Indique como deseja pagar:\n<present selectable=\"\" options:=\"\">\n- Dinheiro\n- Débito\n- Crédito ",
+      "type" : "template",
+      "template" : " Indique como deseja pagar:\n<present selectable=\"\" options:=\"\">\n- Dinheiro\n- Débito\n- Crédito "
+    },
+    {
+      "id" : "template- Indique como deseja pagar:\nresent selectable=\"\" options:=\"\">\n- Dinheiro\n- Débito\n- Crédito ",
+      "type" : "template",
+      "template" : " Indique como deseja pagar:\nresent selectable=\"\" options:=\"\">\n- Dinheiro\n- Débito\n- Crédito "
+    },
+    {
+      "id" : "template-(disse não)",
+      "type" : "template",
+      "template" : "(disse não)"
+    },
+    {
+      "id" : "template-Claro! O que você deseja comprar?",
+      "type" : "template",
+      "template" : "Claro! O que você deseja comprar?"
+    },
+    {
+      "id" : "template-Desculpe, eu acho que não reconheço esse produto. Pode tentar novamente digitar o nome dele?",
+      "type" : "template",
+      "template" : "Desculpe, eu acho que não reconheço esse produto. Pode tentar novamente digitar o nome dele?"
+    },
+    {
+      "id" : "template-Indique como deseja pagar: {paymentOptions}",
+      "type" : "template",
+      "template" : "Indique como deseja pagar: {paymentOptions}",
+      "requirements" : [
+        {
+          "name" : "paymentOptions",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Legal, veja as ofertas que encontrei para Sorine perto de você: {quotations}",
+      "type" : "template",
+      "template" : "Legal, veja as ofertas que encontrei para Sorine perto de você: {quotations}",
+      "requirements" : [
+        {
+          "name" : "quotations",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Legal, veja as ofertas que encontrei para Sorine perto de você: {quotation}",
+      "type" : "template",
+      "template" : "Legal, veja as ofertas que encontrei para Sorine perto de você: {quotation}",
+      "requirements" : [
+        {
+          "name" : "quotation",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Legal, veja as ofertas que encontrei para {product} perto de você: {quotation}",
+      "type" : "template",
+      "template" : "Legal, veja as ofertas que encontrei para {product} perto de você: {quotation}",
+      "requirements" : [
+        {
+          "name" : "product",
+          "negative" : false
+        },
+        {
+          "name" : "quotation",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-O que você deseja comprar?",
+      "type" : "template",
+      "template" : "O que você deseja comprar?"
+    },
+    {
+      "id" : "template-Ok Daniel, estou pronto para fazer o pedido. Por favor confira os dados da entrega antes: \n{orderInfo}\n\nEstá tudo correto? Posso fazer o pedido para você?",
+      "type" : "template",
+      "template" : "Ok Daniel, estou pronto para fazer o pedido. Por favor confira os dados da entrega antes: \n{orderInfo}\n\nEstá tudo correto? Posso fazer o pedido para você?",
+      "requirements" : [
+        {
+          "name" : "orderInfo",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Ok Daniel, estou pronto para fazer o pedido. Por favor confira os dados da entrega antes: {orderInfo}",
+      "type" : "template",
+      "template" : "Ok Daniel, estou pronto para fazer o pedido. Por favor confira os dados da entrega antes: {orderInfo}",
+      "requirements" : [
+        {
+          "name" : "orderInfo",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Ok, devo ter entendido errado. Vamos tentar novamente.",
+      "type" : "template",
+      "template" : "Ok, devo ter entendido errado. Vamos tentar novamente."
+    },
+    {
+      "id" : "template-Ok, eu conheço esse remédio: \n{productInfo}\n\nÉ isso mesmo que você precisa?",
+      "type" : "template",
+      "template" : "Ok, eu conheço esse remédio: \n{productInfo}\n\nÉ isso mesmo que você precisa?",
+      "requirements" : [
+        {
+          "name" : "productInfo",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Ok, eu conheço esse remédio: {productInfo}",
+      "type" : "template",
+      "template" : "Ok, eu conheço esse remédio: {productInfo}",
+      "requirements" : [
+        {
+          "name" : "productInfo",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Seu pedido já está a caminho. Qualquer dúvida basta me chamar que estarei aqui pra te atender 24h por dia!",
+      "type" : "template",
+      "template" : "Seu pedido já está a caminho. Qualquer dúvida basta me chamar que estarei aqui pra te atender 24h por dia!"
+    },
+    {
+      "id" : "template-Seu pedido já está a caminho. Qualquer dúvida basta me chamar que estarei aqui pra te atender 24h por dia! =)",
+      "type" : "template",
+      "template" : "Seu pedido já está a caminho. Qualquer dúvida basta me chamar que estarei aqui pra te atender 24h por dia! =)"
+    },
+    {
+      "id" : "template-Seu pedido já está a caminho. Qualquer dúvida basta me chamar!",
+      "type" : "template",
+      "template" : "Seu pedido já está a caminho. Qualquer dúvida basta me chamar!"
+    },
+    {
+      "id" : "template-Seu pedido já está a caminho. Qualquer dúvida basta me chamar! Até a próxima!",
+      "type" : "template",
+      "template" : "Seu pedido já está a caminho. Qualquer dúvida basta me chamar! Até a próxima!"
+    }
+  ]
+}

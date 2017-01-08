@@ -1,0 +1,22 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords"
+    ],
+    "name" : "paymentForm",
+    "lang" : "pt",
+    "exotic" : false,
+    "id" : "paymentForm",
+    "values" : [
+      {
+        "value" : "Dinheiro",
+        "expressions" : [
+          "Dinheiro"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

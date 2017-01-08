@@ -1,0 +1,22 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords"
+    ],
+    "name" : "product",
+    "lang" : "pt",
+    "exotic" : false,
+    "id" : "product",
+    "values" : [
+      {
+        "value" : "Sorine",
+        "expressions" : [
+          "Sorine"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

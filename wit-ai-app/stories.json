@@ -1,0 +1,248 @@
+{
+  "data" : [
+    {
+      "name" : "",
+      "turns" : [
+        {
+          "user" : "Desejo comprar um remédio",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"purchase\""
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "template-O que você deseja comprar?"
+            }
+          ]
+        },
+        {
+          "user" : "Sorine",
+          "entities" : [
+            {
+              "entity" : "product",
+              "value" : "\"Sorine\"",
+              "start" : 0,
+              "end" : 6
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "function-getProduct"
+            },
+            {
+              "branches" : [
+                {
+                  "predicates" : [
+                    {
+                      "name" : "productInfo",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "action" : "template-Ok, eu conheço esse remédio: \n{productInfo}\n\nÉ isso mesmo que você precisa?"
+                    }
+                  ],
+                  "turns" : [
+                    {
+                      "branches" : [
+                        [
+                          {
+                            "user" : "Sim",
+                            "entities" : [
+                              {
+                                "entity" : "yes_no",
+                                "value" : "\"Sim\"",
+                                "start" : 0,
+                                "end" : 3
+                              }
+                            ],
+                            "operations" : [
+                              {
+                                "action" : "function-getQuotation"
+                              },
+                              {
+                                "branches" : [
+                                  {
+                                    "predicates" : [
+                                      {
+                                        "name" : "quotation",
+                                        "negative" : false
+                                      }
+                                    ],
+                                    "operations" : [
+                                      {
+                                        "action" : "template-Legal, veja as ofertas que encontrei para Sorine perto de você: {quotation}"
+                                      }
+                                    ],
+                                    "turns" : [
+                                      {
+                                        "user" : "Raia",
+                                        "entities" : [
+                                          {
+                                            "entity" : "caterer",
+                                            "value" : "\"Raia\"",
+                                            "start" : 0,
+                                            "end" : 4
+                                          }
+                                        ],
+                                        "operations" : [
+                                          {
+                                            "action" : "function-selectCaterer"
+                                          },
+                                          {
+                                            "branches" : [
+                                              {
+                                                "predicates" : [
+                                                  {
+                                                    "name" : "caterer",
+                                                    "negative" : false
+                                                  }
+                                                ],
+                                                "operations" : [
+                                                  {
+                                                    "action" : "function-getPaymentOptions"
+                                                  },
+                                                  {
+                                                    "branches" : [
+                                                      {
+                                                        "predicates" : [
+                                                          {
+                                                            "name" : "paymentOptions",
+                                                            "negative" : false
+                                                          }
+                                                        ],
+                                                        "operations" : [
+                                                          {
+                                                            "action" : "template-Indique como deseja pagar: {paymentOptions}"
+                                                          }
+                                                        ],
+                                                        "turns" : [
+                                                          {
+                                                            "user" : "Dinheiro",
+                                                            "entities" : [
+                                                              {
+                                                                "entity" : "paymentForm",
+                                                                "value" : "\"Dinheiro\"",
+                                                                "start" : 0,
+                                                                "end" : 8
+                                                              }
+                                                            ],
+                                                            "operations" : [
+                                                              {
+                                                                "action" : "function-selectPaymentForm"
+                                                              },
+                                                              {
+                                                                "branches" : [
+                                                                  {
+                                                                    "predicates" : [
+                                                                      {
+                                                                        "name" : "paymentForm",
+                                                                        "negative" : false
+                                                                      }
+                                                                    ],
+                                                                    "operations" : [
+                                                                      {
+                                                                        "action" : "function-getCurrentOrder"
+                                                                      },
+                                                                      {
+                                                                        "branches" : [
+                                                                          {
+                                                                            "predicates" : [
+                                                                              {
+                                                                                "name" : "orderInfo",
+                                                                                "negative" : false
+                                                                              }
+                                                                            ],
+                                                                            "operations" : [
+                                                                              {
+                                                                                "action" : "template-Ok Daniel, estou pronto para fazer o pedido. Por favor confira os dados da entrega antes: \n{orderInfo}\n\nEstá tudo correto? Posso fazer o pedido para você?"
+                                                                              }
+                                                                            ],
+                                                                            "turns" : [
+                                                                              {
+                                                                                "user" : "Sim",
+                                                                                "entities" : [
+                                                                                  {
+                                                                                    "entity" : "yes_no",
+                                                                                    "value" : "\"yes\"",
+                                                                                    "start" : 0,
+                                                                                    "end" : 3
+                                                                                  }
+                                                                                ],
+                                                                                "operations" : [
+                                                                                  {
+                                                                                    "action" : "template-Seu pedido já está a caminho. Qualquer dúvida basta me chamar que estarei aqui pra te atender 24h por dia!"
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "user" : "Não",
+                            "entities" : [
+                              {
+                                "entity" : "yes_no",
+                                "value" : "\"Não\""
+                              }
+                            ],
+                            "operations" : [
+                              {
+                                "action" : "template-Ok, devo ter entendido errado. Vamos tentar novamente."
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "predicates" : [
+                    {
+                      "name" : "unknownProduct",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "action" : "template-Desculpe, eu acho que não reconheço esse produto. Pode tentar novamente digitar o nome dele?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

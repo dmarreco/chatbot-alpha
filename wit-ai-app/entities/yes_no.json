@@ -1,0 +1,35 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords",
+      "trait"
+    ],
+    "name" : "yes_no",
+    "lang" : "pt",
+    "exotic" : false,
+    "id" : "yes_no",
+    "values" : [
+      {
+        "value" : "Não"
+      },
+      {
+        "value" : "Sim",
+        "expressions" : [
+          "Sim"
+        ]
+      },
+      {
+        "value" : "no"
+      },
+      {
+        "value" : "yes",
+        "expressions" : [
+          "Sim"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

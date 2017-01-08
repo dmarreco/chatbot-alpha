@@ -1,0 +1,18 @@
+{
+  "data" : {
+    "lookups" : [
+      "trait"
+    ],
+    "name" : "intent",
+    "lang" : "pt",
+    "exotic" : false,
+    "id" : "intent",
+    "values" : [
+      {
+        "value" : "purchase"
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

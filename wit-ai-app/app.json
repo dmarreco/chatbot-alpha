@@ -1,0 +1,9 @@
+{
+  "version" : 20160513,
+  "zip-command" : "zip BenieAlpha.zip BenieAlpha/app.json BenieAlpha/entities/*.json BenieAlpha/actions.json BenieAlpha/stories.json BenieAlpha/expressions.json",
+  "data" : {
+    "name" : "BenieAlpha",
+    "description" : "Versão alfa do Benie Health Concierge",
+    "lang" : "pt"
+  }
+}

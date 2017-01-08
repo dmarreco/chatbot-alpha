@@ -1,0 +1,66 @@
+{
+  "data" : [
+    {
+      "text" : "Desejo comprar um remédio",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"purchase\""
+        }
+      ]
+    },
+    {
+      "text" : "Dinheiro",
+      "entities" : [
+        {
+          "entity" : "paymentForm",
+          "value" : "\"Dinheiro\"",
+          "start" : 0,
+          "end" : 8
+        }
+      ]
+    },
+    {
+      "text" : "Não",
+      "entities" : [
+        {
+          "entity" : "yes_no",
+          "value" : "\"Não\""
+        }
+      ]
+    },
+    {
+      "text" : "Raia",
+      "entities" : [
+        {
+          "entity" : "caterer",
+          "value" : "\"Raia\"",
+          "start" : 0,
+          "end" : 4
+        }
+      ]
+    },
+    {
+      "text" : "Sim",
+      "entities" : [
+        {
+          "entity" : "yes_no",
+          "value" : "\"yes\"",
+          "start" : 0,
+          "end" : 3
+        }
+      ]
+    },
+    {
+      "text" : "Sorine",
+      "entities" : [
+        {
+          "entity" : "product",
+          "value" : "\"Sorine\"",
+          "start" : 0,
+          "end" : 6
+        }
+      ]
+    }
+  ]
+}

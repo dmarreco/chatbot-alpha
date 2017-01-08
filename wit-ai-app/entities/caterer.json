@@ -1,0 +1,22 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords"
+    ],
+    "name" : "caterer",
+    "lang" : "pt",
+    "exotic" : false,
+    "id" : "caterer",
+    "values" : [
+      {
+        "value" : "Raia",
+        "expressions" : [
+          "Raia"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}
